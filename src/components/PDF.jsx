@@ -1,7 +1,7 @@
 import { Document, Page, View, Text, StyleSheet } from "@react-pdf/renderer";
 
 export function PDF() {
-  let styling = StyleSheet.create({
+  let styles = StyleSheet.create({
     page: {
       backgroundColor: "#fff",
     },
@@ -9,14 +9,17 @@ export function PDF() {
       margin: 20,
       fontSize: "16pt",
     },
+    heading: {
+      fontSize: '24pt',
+    }
   });
   return (
     <Document>
-      <Page style={styling.page}>
-        <View style={styling.section}>
-          <Text>Hello World</Text>
+      <Page style={styles.page}>
+        <View style={styles.section}>
+          <Text style={styles.heading}>Hello World</Text>
         </View>
-        <View style={styling.section}>
+        <View style={styles.section}>
           <Text>This is a demo</Text>
         </View>
       </Page>
