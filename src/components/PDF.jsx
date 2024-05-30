@@ -7,11 +7,11 @@ export function PDF() {
     },
     section: {
       margin: 20,
-      fontSize: "16pt",
+      fontSize: "16px",
     },
     heading: {
-      fontSize: '24pt',
-    }
+      fontSize: "24px",
+    },
   });
   return (
     <Document>

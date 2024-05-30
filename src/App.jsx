@@ -23,7 +23,7 @@ export default function App() {
         </PDFViewer>
         <PDFDownloadLink document={<PDF />} fileName="demo.pdf">
           {({ blob, url, loading, error }) => {
-            // console.log({ blob, url, loading, error });
+            console.log({ blob, url, loading, error });
             return loading ? "Loading..." : "Download pdf";
           }}
         </PDFDownloadLink>
