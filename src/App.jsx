@@ -24,7 +24,7 @@ export default function App() {
         <PDFDownloadLink document={<PDF />} fileName="demo.pdf">
           {({ blob, url, loading, error }) => {
             // console.log({ blob, url, loading, error });
-            return loading ? "Loading document..." : "Download now!";
+            return loading ? "Loading..." : "Download pdf";
           }}
         </PDFDownloadLink>
       </div>
